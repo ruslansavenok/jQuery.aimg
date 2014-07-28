@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jquery.aimg.js</title>
+  <style type="text/css">
+    .ajax-loading {
+      background: url(images/loader.png) no-repeat;
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#" id="init">Initialize</a> or
+  <a href="#" id="reset">Reset</a> or
+  <a href="#" id="clear">Stop</a> or
+  <a href="#" id="ctn">Continue</a>
+
+  <br />
+  <br />
+  <br />
+
+  <div class="ajax-loading"></div>
+
+  <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="../jquery.aimg.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var $loader = $('.ajax-loading');
+
+      function run () {
+        $loader.aimg({
+          frames: 8,
+          delay: 100
+        });
+      }
+
+      run();
+
+      $('#init').click(function () {
+        run();
+        return false;
+      });
+
+      $('#clear').click(function () {
+        $loader.aimg('stop');
+        return false;
+      });
+
+      $('#reset').click(function () {
+        $loader.aimg('reset');
+        return false;
+      });
+
+      $('#ctn').click(function () {
+        $loader.aimg();
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>
