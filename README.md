@@ -1,9 +1,9 @@
+## CSS3 implementation 
+http://codepen.io/ruslansavenok/pen/rOBBZo
+
 jQuery.aimg
 ===========
 jQuery plugin for animating image sprites e.g. simulating apng format
-
-## CSS3 implementation 
-http://codepen.io/ruslansavenok/pen/rOBBZo
 
 Check out [The Demo](https://dl.dropboxusercontent.com/u/18659172/code/jquery.aimg/v0.3/demo/index.html)
 
